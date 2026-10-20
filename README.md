@@ -1,15 +1,20 @@
-![Main window](docs/images/app_banner.png)
 # Mortal Shell Save Manager
 
 Save manager for Mortal Shell on PC. Keep snapshots of your save slots and go back to any of them, for example to the point before a boss.
 
 Made by NinjaTea. Version 1.2.0.
 
-![Main window](docs/images/screenshot.png)
+<!-- Add docs/images/screenshot.png (a screenshot taken on Windows) and replace this line with: ![Main window](docs/images/screenshot.png) -->
+
+## Demo video
+
+[![Demo video: creating and restoring a Mortal Shell save snapshot](https://img.youtube.com/vi/UqVStOLUpPk/hqdefault.jpg)](https://www.youtube.com/watch?v=UqVStOLUpPk)
+
+A five-minute demo: create a snapshot, change your progress in the game, then restore the snapshot. [Watch it on YouTube](https://www.youtube.com/watch?v=UqVStOLUpPk).
 
 ## Download
 
-Get `MortalShellSaveManager.exe` from the [latest release](https://github.com/FaisalTmz007/mortalshell-save-manager/releases/latest) and put it in its own folder. It creates a `saves` folder next to itself, so do not put it in `Program Files`. The tool is also on [Nexus Mods](https://www.nexusmods.com/mortalshell/mods/40).
+Get `MortalShellSaveManager.exe` from the [latest release](https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest) and put it in its own folder. It creates a `saves` folder next to itself, so do not put it in `Program Files`. The tool is also on [Nexus Mods](NEXUS_PAGE_URL).
 
 The source code in this repository is published so you can check what the program does before you run it. You do not need it to use the tool. To run from source, install Python 3.9 or newer, then run `pip install .` followed by `mortalshell-save-manager` (or `python -m mortalshell_save_manager`).
 
@@ -99,7 +104,7 @@ Tested on PC with the save folder under `Dungeonhaven`. Other store versions are
 | `src/mortalshell_save_manager/` | The program: `store.py` (snapshots), `gui.py` (window), `process.py` (game detection), `paths.py`, `config.py` |
 | `tests/` | Automated tests |
 | `docs/` | Release notes, Nexus Mods page text and screenshots |
-| `.github/` | Continuous integration, release build and issue templates |
+| `.github/` | Continuous integration, release build, issue templates and the sponsor link |
 | `pyproject.toml` | Package metadata and tool settings |
 | `CHANGELOG.md` | Version history |
 | `CONTRIBUTING.md` | How to set up, test and release |
@@ -113,6 +118,10 @@ pytest
 ```
 
 The tests use temporary folders and never touch your real saves. The window tests are skipped when no display is available.
+
+## Support
+
+Mortal Shell Save Manager is free and stays free, and tips do not unlock anything. If you want to support the work, you can leave a tip on [Trakteer](https://trakteer.id/USERNAME_TRAKTEER).
 
 ## Disclaimer
 
