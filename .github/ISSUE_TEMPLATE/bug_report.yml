@@ -1,0 +1,35 @@
+name: Bug report
+description: Something does not work as expected
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Program version
+      description: Shown in the window title.
+      placeholder: "1.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: store
+    attributes:
+      label: Where did you get the game?
+      options:
+        - Steam
+        - Epic Games Store
+        - GOG
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: process
+    attributes:
+      label: Game process name
+      description: Task Manager, Details tab, while the game is running. Only needed for detection problems.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead. Include any error message.
+    validations:
+      required: true
