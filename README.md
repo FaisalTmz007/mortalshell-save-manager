@@ -1,3 +1,4 @@
+![Main window](docs/images/app_banner.png)
 # Mortal Shell Save Manager
 
 Save manager for Mortal Shell on PC. Keep snapshots of your save slots and go back to any of them, for example to the point before a boss.
@@ -8,7 +9,7 @@ Made by NinjaTea. Version 1.2.0.
 
 ## Download
 
-Get `MortalShellSaveManager.exe` from the [latest release](https://github.com/FaisalTmz007/mortalshell-save-manager/releases/latest) and put it in its own folder. It creates a `saves` folder next to itself, so do not put it in `Program Files`. The tool is also on [Nexus Mods](NEXUS_PAGE_URL).
+Get `MortalShellSaveManager.exe` from the [latest release](https://github.com/FaisalTmz007/mortalshell-save-manager/releases/latest) and put it in its own folder. It creates a `saves` folder next to itself, so do not put it in `Program Files`. The tool is also on [Nexus Mods](https://www.nexusmods.com/mortalshell/mods/40).
 
 The source code in this repository is published so you can check what the program does before you run it. You do not need it to use the tool. To run from source, install Python 3.9 or newer, then run `pip install .` followed by `mortalshell-save-manager` (or `python -m mortalshell_save_manager`).
 
