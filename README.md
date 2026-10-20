@@ -4,7 +4,7 @@ Save manager for Mortal Shell on PC. Keep snapshots of your save slots and go ba
 
 Made by NinjaTea. Version 1.2.0.
 
-<!-- Add docs/images/screenshot.png (a screenshot taken on Windows) and replace this line with: ![Main window](docs/images/screenshot.png) -->
+![Main window](docs/images/screenshot.png)
 
 ## Download
 
