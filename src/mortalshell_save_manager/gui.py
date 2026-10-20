@@ -18,6 +18,13 @@ from .store import AUTOBACKUP_DIR, SaveError, SaveStore
 GAME_POLL_MS = 4000
 
 
+def _icon_path() -> Path | None:
+    """assets/icon.ico inside a packaged .exe, or in the repository when run from source."""
+    base = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parents[2]))
+    path = base / "assets" / "icon.ico"
+    return path if path.is_file() else None
+
+
 def _center_on(win: tk.Toplevel, parent: tk.Misc) -> None:
     win.update_idletasks()
     x = parent.winfo_rootx() + (parent.winfo_width() - win.winfo_width()) // 2
@@ -170,6 +177,12 @@ class App(tk.Tk):
         self.title(f"{APP_TITLE} v{__version__}")
         self.geometry("820x500")
         self.minsize(640, 380)
+        icon = _icon_path()
+        if icon:
+            try:
+                self.iconbitmap(default=str(icon))
+            except tk.TclError:
+                pass
 
         self.config_store = Config(data_dir() / "config.json")
         self.store = SaveStore(data_dir() / "saves", self.config_store.save_dir or default_save_dir())
@@ -427,4 +440,3 @@ class App(tk.Tk):
 
 def main() -> None:
     App().mainloop()
-

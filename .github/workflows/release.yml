@@ -17,9 +17,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m pip install . pyinstaller
-      - run: >
-          pyinstaller --onefile --windowed --name MortalShellSaveManager
-          --paths src src/mortalshell_save_manager/__main__.py
+      - name: Build exe
+        shell: pwsh
+        run: |
+          $opts = @("--onefile", "--windowed", "--name", "MortalShellSaveManager", "--paths", "src")
+          if (Test-Path assets/icon.ico) {
+            $opts += @("--icon", "assets/icon.ico", "--add-data", "assets/icon.ico;assets")
+          }
+          pyinstaller @opts src/mortalshell_save_manager/__main__.py
       - name: Write checksum
         shell: pwsh
         run: |
