@@ -8,9 +8,9 @@ Made by NinjaTea. Version 1.2.0.
 
 ## Demo video
 
-[![Demo video: creating and restoring a Mortal Shell save snapshot](https://img.youtube.com/vi/UqVStOLUpPk/hqdefault.jpg)](https://www.youtube.com/watch?v=UqVStOLUpPk)
+[![Demo video: creating and restoring a Mortal Shell save snapshot](https://img.youtube.com/vi/0JfocdBmxRM/hqdefault.jpg)](https://www.youtube.com/watch?v=0JfocdBmxRM)
 
-A five-minute demo: create a snapshot, change your progress in the game, then restore the snapshot. [Watch it on YouTube](https://www.youtube.com/watch?v=UqVStOLUpPk).
+A five-minute demo: create a snapshot, change your progress in the game, then restore the snapshot. [Watch it on YouTube](https://www.youtube.com/watch?v=0JfocdBmxRM).
 
 ## Download
 
